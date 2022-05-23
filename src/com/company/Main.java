@@ -2,14 +2,19 @@ package com.company;
 
 import com.company.startupSet.Farm;
 import com.company.startupSet.Owner;
+import com.company.data.*;
 
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
+        boolean gameOn = false;
+
+
         Owner owner = new Owner();
         owner.setName();
+        Time curentTime = new Time();
 
         System.out.println("podaj ktora farme chcesz zakupic");
         System.out.println("farma numer 1");
@@ -24,8 +29,8 @@ public class Main {
         System.out.println(owner.name);
 
         owner.farmSelect();
-        Scanner myObj = new Scanner(System.in);
-        switch (myObj.nextInt()) {
+        Scanner setFarm = new Scanner(System.in);
+        switch (setFarm.nextInt()) {
             case 1:
                 System.out.println("wybrales farme nr.1");
                 owner.setFarm(farm1);
@@ -39,13 +44,17 @@ public class Main {
                 owner.setFarm(farm3);
                 break;
         }
-
         System.out.println(owner.cash);
-                /* do {
+
+
+        do {
+            curentTime.round();
+            se
 
         } while (
-
-        ); */
+                gameOn &&
+                owner.farm.farmSize >= 20
+        );
 
 
     }

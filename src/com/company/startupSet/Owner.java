@@ -2,11 +2,13 @@ package com.company.startupSet;
 
 import java.util.*;
 import com.company.startupSet.Farm;
+import com.company.data.Plants;
 
 public class Owner {
     public String name;
     public Integer cash = 25000;
     public Farm farm;
+    public Plants plants;
 
     public void setName() {
         Scanner myObj = new Scanner(System.in);
