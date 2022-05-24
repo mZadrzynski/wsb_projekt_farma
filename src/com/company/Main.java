@@ -1,7 +1,6 @@
 package com.company;
 
-import com.company.startupSet.Farm;
-import com.company.startupSet.Owner;
+import com.company.startupSet.*;
 import com.company.data.*;
 
 import java.util.Scanner;
@@ -11,10 +10,9 @@ public class Main {
     public static void main(String[] args) {
         boolean gameOn = false;
 
-
         Owner owner = new Owner();
         owner.setName();
-        Time curentTime = new Time();
+        Time time = new Time();
 
         System.out.println("podaj ktora farme chcesz zakupic");
         System.out.println("farma numer 1");
@@ -28,6 +26,7 @@ public class Main {
         farm3.randomFarmGen();
         System.out.println(owner.name);
 
+
         owner.farmSelect();
         Scanner setFarm = new Scanner(System.in);
         switch (setFarm.nextInt()) {
@@ -40,16 +39,21 @@ public class Main {
                 owner.setFarm(farm2);
                 break;
             case 3:
-                System.out.println("wybrales farme nr.2");
+                System.out.println("wybrales farme nr.3");
                 owner.setFarm(farm3);
                 break;
         }
-        System.out.println(owner.cash);
 
+        Plants marchew = new Plants(50.0, 15, 30.0, 5.0, 50.0,5.0, 10);
+
+        System.out.println(owner.cash);
+        owner.plants = marchew;
 
         do {
-            curentTime.round();
-            se
+
+            time.time();
+            owner.farm.groundBuy();
+            owner.farm.buildingBuy();
 
         } while (
                 gameOn &&

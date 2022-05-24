@@ -7,6 +7,7 @@ public class Farm {
     public Integer buildings;
     public Integer farmPrice;
     public Owner owner;
+    public Integer hectarePrice;
 
 
     public void randomFarmGen() {
@@ -20,7 +21,14 @@ public class Farm {
 
     public void groundBuy() {
         System.out.println("czy chcesz kupic ziemie");
+
     }
+
+    public void buildingBuy() {
+
+
+    }
+
 }
 
 
