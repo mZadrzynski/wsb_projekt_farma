@@ -24,10 +24,9 @@ public class Plants {
         this.sellPrice = sellPrice;
         this.growingRate = growingRate;
     }
-
-    Plants rzodkiew = new Plants(50.0, 15, 30.0, 5.0, 50.0,5.0, 10);
-
-
+    public void seed() {
+        System.out.println("zaswiew roslin");
+    }
 
 
 }
