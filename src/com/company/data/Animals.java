@@ -16,3 +16,4 @@ public class Animals {
     public String feedType;
     public Double reproductionRate;
 }
+

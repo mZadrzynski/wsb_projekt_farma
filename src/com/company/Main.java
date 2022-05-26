@@ -46,6 +46,11 @@ public class Main {
 
         Plants marchew = new Plants(50.0, 15, 30.0, 5.0, 50.0,5.0, 10);
         Plants rzodkiew = new Plants(50.0, 15, 30.0, 5.0, 50.0,5.0, 10);
+        Plants salata = new Plants(50.0, 15, 30.0, 5.0, 50.0,5.0, 10);
+
+        Animals swiniak = new Animals(100.0,5,1, "pasza", 2.0 );
+        Animals krowa = new Animals(100.0,5,1, "pasza", 2.0 );
+        Animals kurczak = new Animals(100.0,5,1, "pasza", 2.0 );
 
         String plants[] = {String.valueOf(marchew), String.valueOf(rzodkiew)};
 
@@ -58,7 +63,7 @@ public class Main {
                     owner.farm.groundBuy();
                     break;
                 case 2:
-                    System.out.println("zakup zwierzat lub roslin");
+                    owner.buy();
                     break;
                 case 3:
                     owner.plants.seed();

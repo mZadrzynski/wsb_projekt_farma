@@ -1,5 +1,6 @@
 package com.company.data;
 
+import com.company.startupSet.Farm;
 import com.company.startupSet.Owner;
 
 public class Plants {
@@ -9,6 +10,7 @@ public class Plants {
     public Double harvestValue; //t per h
     public Double harvestCost;  //per hector
     public Integer[] growingTime = {10, 20}; // between weeks
+
 
 
     public Integer growingRate;
@@ -24,9 +26,12 @@ public class Plants {
         this.sellPrice = sellPrice;
         this.growingRate = growingRate;
     }
+
     public void seed() {
         System.out.println("zaswiew roslin");
     }
 
 
 }
+
+
